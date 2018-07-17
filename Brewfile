@@ -1,11 +1,10 @@
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'caskroom/fonts'
-tap 'crisidev/homebrew-chunkwm'
 
 brew 'tmux'
 brew 'git'
-brew 'node@4'
+brew 'node'
 brew 'npm'
 
 cask 'iterm2'
