@@ -4,8 +4,9 @@ tap 'caskroom/fonts'
 
 brew 'tmux'
 brew 'git'
+brew 'maven'
 brew 'node'
-brew 'npm'
+brew 'ccat'
 
 cask 'iterm2'
 cask 'font-fira-code'

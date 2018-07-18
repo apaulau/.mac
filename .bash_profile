@@ -25,7 +25,7 @@
 
 #   Set Paths
 #   ------------------------------------------------------------
-    export PATH="$PATH:/usr/local/bin"
+    export PATH="$PATH:/usr/local/bin:~/.global-modules/bin"
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
@@ -271,5 +271,3 @@ httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grab
 
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 
-export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
