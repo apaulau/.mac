@@ -19,6 +19,19 @@
 #   1.  ENVIRONMENT CONFIGURATION
 #   -------------------------------
 
+export LANG="en_US.UTF-8"
+
+# Bash history merge
+#   ------------------------------------------------------------
+
+# Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups  
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
+# After each command, append to the history file and reread it
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
 #   Change Prompt
 #   ------------------------------------------------------------
     . ~/.bash_prompt
@@ -26,6 +39,7 @@
 #   Set Paths
 #   ------------------------------------------------------------
     export PATH="$PATH:/usr/local/bin:~/.global-modules/bin"
+#    export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
